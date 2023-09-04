@@ -1,0 +1,45 @@
+﻿using Bussiness.Interface;
+using Common.Model;
+using EmployeeManegment.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
+
+namespace EmployeeManegment.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        private readonly IEmployeeBussiness employeeBussiness;
+
+        public HomeController(ILogger<HomeController> logger, IEmployeeBussiness employeeBussiness)
+        {
+            _logger = logger;
+            this.employeeBussiness = employeeBussiness;
+        }
+        
+        
+  
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}

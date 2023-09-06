@@ -1,0 +1,99 @@
+﻿.gradient-custom {
+    
+    /* fallback for old browsers */
+    background: #f6d365;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+}
+
+.buttonDetails {
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f6d365;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 14px;
+    float: left;
+}
+
+    .buttonDetails:hover {
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+    }
+
+.buttonEditDetails {
+    float: right;
+    width: 70px;
+    height: 40px;
+    margin-left: 45%;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f6d365;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 14px;
+}
+
+    .buttonEditDetails:hover {
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+    }
+
+.buttonDeleteDetails {
+    float: right;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f6d365;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 14px;
+}
+
+    .buttonDeleteDetails:hover {
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+    }
+
+.editIcon {
+    font-size:24px;
+    float:left;
+    margin-left: 45%;
+}
+
+.buttonLogout {
+
+    position:center;
+    margin-top: 35px;
+    margin-left: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #f6d365;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 14px;
+    float: left;
+    position: relative;
+}
+
+    .buttonLogout:hover {
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+    }

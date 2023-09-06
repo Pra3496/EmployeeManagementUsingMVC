@@ -26,4 +26,10 @@ namespace Common.Model
 
 
     }
+
+    public enum Gender
+    {
+        Male,
+        Female
+    }
 }

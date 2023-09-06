@@ -1,8 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div class="boxes">
+    <img src="~/images/logo.png" style="border-radius: 80%; height:50px; margin-left: 40%;" alt="Avatar"><br><br>
+    <h2>Log in</h2>
+    <p>EMPLOYEE MANEGAMENT</p>
+    <div class="inputBoxes">
+        <input id="email" type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>Username</label>
+    </div>
+    <div class="inputBoxes">
+        <input id="pass" type="pass" name="password" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>Passward</label>
+    </div>
+    <a href="#">Forget Password?</a><br><br>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div id="loading" class="loader"></div>
+
+    <a style="text-decoration: none;" asp-controller="Employee" asp-action="Create" class="button2">Register</a>
+
+    <a style="text-decoration: none;" asp-controller="Employee" asp-action="Index" class="buttonlogin">Submit</a>
+
 </div>
+

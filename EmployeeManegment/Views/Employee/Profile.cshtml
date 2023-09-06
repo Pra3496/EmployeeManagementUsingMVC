@@ -1,7 +1,7 @@
 ﻿@model Common.Model.EmployeeModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Profile";
 }
 
 <section class="vh" style="background-color:aquamarine;">
@@ -12,11 +12,11 @@
                     <div class="row g-0">
                         <div class="col-md-4 gradient-custom text-center text-white"
                              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                                <img src="@Model.ProfileImg" alt="Avatar" class="img-fluid my-5" />
+                            <img src="@Model.ProfileImg" alt="Avatar" class="img-fluid my-5" />
                             <h5>@Html.DisplayFor(model => model.Name)</h5>
                             <p>@Html.DisplayFor(model => model.Department)</p>
-                            <i class="fa fa-edit  editIcon" ></i>
-                            <a style="text-decoration: none;" asp-controller="Home" asp-action="Index" class="buttonLogout" >Logout</a>
+                            <i class="fa fa-edit  editIcon"></i>
+                            <a style="text-decoration: none;" asp-controller="Employee" asp-action="Login" class="buttonLogout">Logout</a>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body p-4">
@@ -55,7 +55,6 @@
                                 <div class="d-flex justify-content-start">
                                     @Html.ActionLink("Delete", "Delete", new { id = Model.EmpId }, new { onclick = "return confirm('Are you sure you want to delete this Profile?');", @class = "buttonDeleteDetails" })
                                     @Html.ActionLink("Edit", "Edit", new { Model.EmpId }, new { @class = "buttonEditDetails", @style = "text-decoration: none;" })
-                                    
                                 </div>
                             </div>
                         </div>
